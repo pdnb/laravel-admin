@@ -282,9 +282,9 @@ class NestedForm
 
             $value = $this->fetchColumnValue($record, $columns);
 
-            if (is_null($value)) {
+            /*if (is_null($value)) {
                 continue;
-            }
+            }*/
 
             if (method_exists($field, 'prepare')) {
                 $value = $field->prepare($value);
