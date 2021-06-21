@@ -327,7 +327,7 @@ class Field implements Renderable
 
         $label = $arguments[0] ?? ucfirst($column);
 
-        return str_replace(['.', '_', '->'], ' ', $label);
+        return str_replace([/*'.', */'_', '->'], ' ', $label);
     }
 
     /**
